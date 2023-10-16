@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #364F6B;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #F5F5F5;
+}
+
+#task{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-input{
+    background-color: #3FC1C9;
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#task-submit{
+    background-color: #3FC1C9;
+    border-radius: 1rem;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#task-submit:hover {
+    background-color: #4AA3BA;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #F5F5F5;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3FC1C9;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .container .text{
+    width: 100%;
+    display: flex;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.task .actions .edit{
+    color: #F5F5F5;
+}
+
+.task .actions .delete{
+    color: #FC5185;
+}
